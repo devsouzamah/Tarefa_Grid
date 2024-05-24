@@ -1,0 +1,54 @@
+/* Estilo do álbum */
+
+body{
+    background-color: white;
+
+}
+
+.titulo{
+    color: rgb(253, 133, 153);
+    text-align: center;
+}
+
+.album{
+    background-color: rgb(213, 253, 249);
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid pink;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+grid img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsividade para telas menores*/
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+       
+    }
+
+    .grid img{
+        width: 100%;
+
+    }
+}
+
+@media(max-width: 540px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+}
